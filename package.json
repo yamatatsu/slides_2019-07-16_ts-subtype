@@ -4,6 +4,11 @@
   "main": "index.js",
   "author": "yamatatsu <the.kinnikuman@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "fusuma start",
+    "build": "fusuma build",
+    "live": "fusuma live"
+  },
   "devDependencies": {
     "fusuma": "^1.12.1"
   }
