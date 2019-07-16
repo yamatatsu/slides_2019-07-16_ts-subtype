@@ -1,0 +1,10 @@
+{
+  "name": "slides_2019-07-16_ts-subtype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yamatatsu <the.kinnikuman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "fusuma": "^1.12.1"
+  }
+}
