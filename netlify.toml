@@ -1,0 +1,8 @@
+[build]
+  command = "yarn build"
+  functions = "functions"
+  publish = "dist"
+[[redirects]]
+  from = "/:page"
+  to = "/index.html"
+  status = 200
