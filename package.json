@@ -10,6 +10,12 @@
     "live": "fusuma live"
   },
   "devDependencies": {
-    "fusuma": "^1.12.1"
+    "file-loader": "^4.0.0",
+    "fusuma": "^1.13.0",
+    "json-loader": "^0.5.7",
+    "monaco-editor-webpack-plugin": "^1.7.0"
+  },
+  "dependencies": {
+    "react-monaco-editor": "^0.26.2"
   }
 }

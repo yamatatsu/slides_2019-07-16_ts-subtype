@@ -743,18 +743,18 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.1.tgz#e93c13942592cf5ef01aa8297444dc192beee52f"
   integrity sha512-Qv4LTqO11jepd5Qmlp3M1YEjBumoTHcHFdgPTQ+sFlIL5myi/7xu/POwP7IRu6odBdmLXdtIs1D6TuW6kbwbbg==
 
-"@fusuma/cli@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/cli/-/cli-1.12.1.tgz#a521f1e1154021b8bd71747a6d9ce9590228b88e"
-  integrity sha512-aY1bc3RB5b2UljejQoN2fzGC/AmoCCaEO8p0Vgj6QbgzFpgwHXNgCSgNmF5Nf80NpcM6beT/1MMapfrZUrpUig==
+"@fusuma/cli@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/cli/-/cli-1.13.0.tgz#02e3070f546399c8463b7e3de87c8fda5d2ed3c5"
+  integrity sha512-gNkjHOS3bIxegK0/YeZ7SHsg7yiJrhYOF4vC1iSxPpLPOtvpDWdt3GsaBI8xBfipRGTfbRNabTTfWXo2OZRsUw==
   dependencies:
     caporal "1.2.0"
     ora "3.4.0"
 
-"@fusuma/client@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/client/-/client-1.12.1.tgz#28f52835ea8d5e5fda192cbe44491b69cd71e87b"
-  integrity sha512-atVSIpG6gcSM0nJDQBZXdbfy5+kASVMewawLdaYRXXj2JAA7E1bllZn926RPLnKf1jeEA1cMKTiJlLUakwvWsw==
+"@fusuma/client@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/client/-/client-1.13.0.tgz#b52ebb6d4c91d6fc278e33deff99841e62801dd7"
+  integrity sha512-Ec8fgr9076sBIH1h0xkc+1V3FzM4PMFqSZ9sTFH37No1m/H3L7NaecqLse1ufvuqSl0euWfhHhmQynyux7fdiA==
   dependencies:
     classnames "^2.2.6"
     font-awesome "4.7.0"
@@ -772,10 +772,10 @@
     screenfull "^4.2.0"
     webslides "^1.4.2"
 
-"@fusuma/configs@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/configs/-/configs-1.12.1.tgz#e34dda3a1d693bd7dc99f21395afeaca8235afe3"
-  integrity sha512-ZKT9QG6hq3ncnhiKARgbrbjRIQ86GTRp9lSer3rXv6OHmcWVsucRtBSkA8QsTPc2nUqOjoBQrg4s0oiBLBUY9g==
+"@fusuma/configs@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/configs/-/configs-1.13.0.tgz#cb3104671c37e37a76ae7a97b41f5ae0df43d9f1"
+  integrity sha512-orAsvu7tHXWkDeNEjyN9TRjj0RwSCTYpdM5sXEJCjzaT4mQB9bzzYCjiC4gwanxWShEBEmIystj7cN3rUBM4+g==
   dependencies:
     "@babel/core" "^7.5.0"
     "@babel/plugin-proposal-class-properties" "^7.5.0"
@@ -794,10 +794,10 @@
     preferred-search "1.0.0"
     prismjs "^1.16.0"
 
-"@fusuma/mdx-loader@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/mdx-loader/-/mdx-loader-1.12.1.tgz#8a15640edc4e74aa7053532aaf1fc1162692df18"
-  integrity sha512-pKEtPnz0HNcda2aTYLfK3zRB8Aywk5Y7iWxBEaCFfag3vF6mWV7V+yw2zisEwlk3O6rTGFo4w4ZnGZg0wRg/aQ==
+"@fusuma/mdx-loader@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/mdx-loader/-/mdx-loader-1.13.0.tgz#3aa8bad83ba8e1ed527651ddc521f32cc629063e"
+  integrity sha512-mwColbDTLLQjDG9icApYXUEh1v74iDzic8c7wqca86MPbo5MAvUeL6OKnjfSlolibPEXfwp3r4OLMbX41Hw1eg==
   dependencies:
     "@mdx-js/mdx" "^1.0.21"
     "@mdx-js/react" "^1.0.21"
@@ -807,52 +807,52 @@
     remark-math "^1.0.6"
     unist-util-visit "^1.4.1"
 
-"@fusuma/task-build@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/task-build/-/task-build-1.12.1.tgz#6f647af7bdd311b9f880959e560af1124c67d8ef"
-  integrity sha512-nHwUyCaX+pgu4yck9AAuR8Qin/NQKd2f5oEBglNEM544z3n2dyI4qd7104Uw6v7lF/qSWQwCjJubrIH7+wzOrg==
+"@fusuma/task-build@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/task-build/-/task-build-1.13.0.tgz#c280a8b410661334ab73fb786c0a6d30cc2afa56"
+  integrity sha512-ugMC3KNW0EWofCZ7vYCSZNuFsKWzv2dBryx+fHyQkSTmYj30Na/xn0m+TmxbacpemVrxbvfmvrrg5eZDy82ecA==
   dependencies:
-    "@fusuma/webpack" "^1.12.1"
+    "@fusuma/webpack" "^1.13.0"
 
-"@fusuma/task-ghp@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/task-ghp/-/task-ghp-1.12.1.tgz#7a1e704ffed1a4f56886eb99cb630a11a30b7762"
-  integrity sha512-vrEsJ5abO+jBnnDM01Vm0hEefuG963zQW/QAhNpWOccv4QiPP1JzgPFe/eIYZcZQQgGl72oekyady49m679mLw==
+"@fusuma/task-ghp@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/task-ghp/-/task-ghp-1.13.0.tgz#70bfb87a95eb8912730761870d63a8542155b875"
+  integrity sha512-YSFTwPETlE7onoLAMAnnTJ3DFgWa16AXDC2Yjb5IPhurX8m2ptglqMGPiUK5EWWeEPIu7rxWGDwDp8ixW/LNeQ==
   dependencies:
     gh-pages "2.0.1"
 
-"@fusuma/task-init@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/task-init/-/task-init-1.12.1.tgz#6e9a5793d1a75f1ec47002f204b332dc33f17a8e"
-  integrity sha512-y46mkNQOyxObqJCry4hcI/e1gjle3n5aJ3EVjkXpP4k5OOwNzZpzP6LovtvcSucd931MTSFV3WcWGPbUCqMb+Q==
+"@fusuma/task-init@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/task-init/-/task-init-1.13.0.tgz#9f350d11f7a2135696a3c9758aa3942afe22b902"
+  integrity sha512-EFwBrEXYP3ctTkdaDQGmS+3t5mOA8uJaUsAme+Ex8Ao/m25rqRo3f7lyyzs8E4jjZNuMmI+okewD+mwowne1Iw==
   dependencies:
-    "@fusuma/configs" "^1.12.1"
+    "@fusuma/configs" "^1.13.0"
 
-"@fusuma/task-start@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/task-start/-/task-start-1.12.1.tgz#a9d47a86fb272eddbfea908aa749a8d42befd317"
-  integrity sha512-tPWxqHqyiT58AK0gxdXcS70VQMohRW7JM45gGzjlRHq9ny6G0tm7ZC78suV6rGizr6gpVqEIe5wPf9zXOI2JeQ==
+"@fusuma/task-start@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/task-start/-/task-start-1.13.0.tgz#9287bb2533d27f49d4b79b1f17e34ab9eb22e04b"
+  integrity sha512-sE5nWCJEiS9G8u+3b4wlMwa/OGtxelVtav2rENJC5gzVi2nHmUUqenwYbExo64MsmWnpQqA5Gbz49bl9Meg8uw==
   dependencies:
-    "@fusuma/webpack" "^1.12.1"
+    "@fusuma/webpack" "^1.13.0"
 
-"@fusuma/utils@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/utils/-/utils-1.12.1.tgz#aaa57ee924ea29f8c0d95321fe908d2bdf3f8d22"
-  integrity sha512-i1o3exJvm+PmIEpR+hgeojHpVqhjnE64gKRxPzr5equyl2sPEYdZtRBs1ZNzJYbY340U0NUm6u48sRqfFfdyog==
+"@fusuma/utils@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/utils/-/utils-1.13.0.tgz#8848bf3a77ae700826050d544cc8fe508c442173"
+  integrity sha512-c1jCL0OWRneLIYGfsnsCCqJiWg1eLBZ2h4qIrK3KTP3s3HvtdOWOiZEZ9SMDObWx2ciIOroCmOwpsx5xn3M1YQ==
   dependencies:
     child-process-promise "^2.2.1"
     git-remote-origin-url "^3.0.0"
     rmfr "2.0.0"
 
-"@fusuma/webpack@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@fusuma/webpack/-/webpack-1.12.1.tgz#13068c8fbe09be5830027e7ed4e69eba98c5aa6e"
-  integrity sha512-QYGzP3LZst6q6E0ESSc1mgRHMee+BAz62O8AvOKTekM811ZRMLtjOXxdaV/uN/OpOUnqE3rbdKM+yH1/ZUtVFA==
+"@fusuma/webpack@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@fusuma/webpack/-/webpack-1.13.0.tgz#90fb852e73b94096401f5d7a2afcad98527271e1"
+  integrity sha512-HnPLolKzcBnsYTXuBylUp65ScnNLoZ5NvN4q5CzDLCZnZneiaQKMB0DIdKc0Pcnm0zQzRq8RN50+M5tuXfS/ew==
   dependencies:
-    "@fusuma/client" "^1.12.1"
-    "@fusuma/configs" "^1.12.1"
-    "@fusuma/mdx-loader" "^1.12.1"
-    "@fusuma/utils" "^1.12.1"
+    "@fusuma/client" "^1.13.0"
+    "@fusuma/configs" "^1.13.0"
+    "@fusuma/mdx-loader" "^1.13.0"
+    "@fusuma/utils" "^1.13.0"
     babel-loader "^8.0.6"
     cache-loader "^4.0.1"
     css-loader "3.0.0"
@@ -863,7 +863,7 @@
     human-size "^1.1.0"
     imagemin-webp-webpack-plugin "^3.2.1"
     jsdom "^15.1.1"
-    mini-css-extract-plugin "0.7.0"
+    mini-css-extract-plugin "0.8.0"
     optimize-css-assets-webpack-plugin "5.0.3"
     postcss-loader "3.0.0"
     react "^16.8.6"
@@ -934,25 +934,71 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
+"@types/anymatch@*":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
+  integrity sha512-/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==
+
 "@types/invariant@^2.2.29":
   version "2.2.30"
   resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.30.tgz#20efa342807606ada5483731a8137cb1561e5fe9"
   integrity sha512-98fB+yo7imSD2F7PF7GIpELNgtLNgo5wjivu0W5V4jx+KVVJxo6p/qN4zdzSTBWy4/sN3pPyXwnhRSD28QX+ag==
+
+"@types/node@*":
+  version "12.6.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.3.tgz#44d507c5634f85e7164707ca36bba21b5213d487"
+  integrity sha512-7TEYTQT1/6PP53NftXXabIZDaZfaoBdeBm8Md/i7zsWRoBe0YwOXguyK8vhHs8ehgB/w9U4K/6EWuTyp0W6nIA==
 
 "@types/node@^10.0.5":
   version "10.14.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.12.tgz#0eec3155a46e6c4db1f27c3e588a205f767d622f"
   integrity sha512-QcAKpaO6nhHLlxWBvpc4WeLrTvPqlHOvaj0s5GriKkA1zq+bsFBPpfYCvQhLqLgYlIko8A9YrPdaMHCo5mBcpg==
 
+"@types/prop-types@*":
+  version "15.7.1"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
+  integrity sha512-CFzn9idOEpHrgdw8JsoTkaDDyRWk1jrzIV8djzcgpq0y9tG4B4lFT+Nxh52DVpDXV+n4+NPNv7M1Dj5uMp6XFg==
+
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
+"@types/react@*":
+  version "16.8.23"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.23.tgz#ec6be3ceed6353a20948169b6cb4c97b65b97ad2"
+  integrity sha512-abkEOIeljniUN9qB5onp++g0EY38h7atnDHxwKUFz1r3VH1+yG1OKi2sNPTyObL40goBmfKFpdii2lEzwLX1cA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/tapable@*":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.4.tgz#b4ffc7dc97b498c969b360a41eee247f82616370"
+  integrity sha512-78AdXtlhpCHT0K3EytMpn4JNxaf5tbqbLcbIRoQIHzpTIyjpxLQKRoxU55ujBXAtg3Nl2h/XWvfDa9dsMOd0pQ==
+
+"@types/uglify-js@*":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.0.4.tgz#96beae23df6f561862a830b4288a49e86baac082"
+  integrity sha512-SudIN9TRJ+v8g5pTG8RRCqfqTMNqgWCKKd3vtynhGzkIIjxaicNAMuY5TRadJ6tzDu3Dotf3ngaMILtmOdmWEQ==
+  dependencies:
+    source-map "^0.6.1"
+
 "@types/unist@^2.0.0", "@types/unist@^2.0.2":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
+
+"@types/webpack@^4.4.19":
+  version "4.4.35"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.4.35.tgz#b7088eb2d471d5645e5503d272783cafa753583b"
+  integrity sha512-kf+mn/+CB4HsFb+Rz0QBRlo8nNC9LFhwqeK5xxhd3FEPRWJv6MFVnljKV5ARac56+syO8vIhq+nGt860+3wx7A==
+  dependencies:
+    "@types/anymatch" "*"
+    "@types/node" "*"
+    "@types/tapable" "*"
+    "@types/uglify-js" "*"
+    source-map "^0.6.0"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -2684,6 +2730,11 @@ cssstyle@^1.2.2:
   dependencies:
     cssom "0.3.x"
 
+csstype@^2.2.0:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
+  integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
+
 cuint@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cuint/-/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
@@ -3776,7 +3827,7 @@ figures@^1.3.5:
     escape-string-regexp "^1.0.5"
     object-assign "^4.1.0"
 
-file-loader@4.0.0:
+file-loader@4.0.0, file-loader@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-4.0.0.tgz#c3570783fefb6e1bc0978a856f4bf5825b966c2a"
   integrity sha512-roAbL6IdSGczwfXxhMi6Zq+jD4IfUpL0jWHD7fvmjdOVb7xBfdRUHe4LpBgO23VtVK5AW1OlWZo0p34Jvx3iWg==
@@ -4050,18 +4101,18 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-fusuma@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/fusuma/-/fusuma-1.12.1.tgz#acedb9129c1b712599d4241733efbcfd0bbea5dc"
-  integrity sha512-MWIehItXbT8O45yQbdQmRoGQamrPMvzs9eokckt5RjNCC/QjFEE5mKuHJM46bc1Lj1UG9jrRkwjileD6jGiOhQ==
+fusuma@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/fusuma/-/fusuma-1.13.0.tgz#df5c96ae6b78c50017593f9228d7f68e6de0f5ca"
+  integrity sha512-2SSiT8S5UG74cSaNS2qvK0YU9olIxdK1stnefvh/p5Z+6BBqzTGq3NWBpM5fXLJyF5EEbm2nr/cSp/qNvtbAQw==
   dependencies:
-    "@fusuma/cli" "^1.12.1"
-    "@fusuma/configs" "^1.12.1"
-    "@fusuma/task-build" "^1.12.1"
-    "@fusuma/task-ghp" "^1.12.1"
-    "@fusuma/task-init" "^1.12.1"
-    "@fusuma/task-start" "^1.12.1"
-    "@fusuma/utils" "^1.12.1"
+    "@fusuma/cli" "^1.13.0"
+    "@fusuma/configs" "^1.13.0"
+    "@fusuma/task-build" "^1.13.0"
+    "@fusuma/task-ghp" "^1.13.0"
+    "@fusuma/task-init" "^1.13.0"
+    "@fusuma/task-start" "^1.13.0"
+    "@fusuma/utils" "^1.13.0"
 
 gauge@~1.2.5:
   version "1.2.7"
@@ -5267,6 +5318,11 @@ json-buffer@3.0.0:
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
+json-loader@^0.5.7:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/json-loader/-/json-loader-0.5.7.tgz#dca14a70235ff82f0ac9a3abeb60d337a365185d"
+  integrity sha512-QLPs8Dj7lnf3e3QYS1zkCo+4ZwqOiF9d/nZnYozTISxXWCfNs9yuky5rJw4/W34s7POaNlbZmQGaB5NiXCbP4w==
+
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
@@ -5821,10 +5877,10 @@ mimic-response@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
 
-mini-css-extract-plugin@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.7.0.tgz#5ba8290fbb4179a43dd27cca444ba150bee743a0"
-  integrity sha512-RQIw6+7utTYn8DBGsf/LpRgZCJMpZt+kuawJ/fju0KiOL6nAaTBNmCJwS7HtwSCXfS47gCkmtBFS7HdsquhdxQ==
+mini-css-extract-plugin@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.8.0.tgz#81d41ec4fe58c713a96ad7c723cdb2d0bd4d70e1"
+  integrity sha512-MNpRGbNA52q6U92i0qbVpQNsgk7LExy41MdAlG84FeytfDOtRIf/mCHdEgG8rpTKOaNKiqUnZdlptF469hxqOw==
   dependencies:
     loader-utils "^1.1.0"
     normalize-url "1.9.1"
@@ -5921,6 +5977,18 @@ moment-mini@^2.22.1:
   version "2.22.1"
   resolved "https://registry.yarnpkg.com/moment-mini/-/moment-mini-2.22.1.tgz#bc32d73e43a4505070be6b53494b17623183420d"
   integrity sha512-OUCkHOz7ehtNMYuZjNciXUfwTuz8vmF1MTbAy59ebf+ZBYZO5/tZKuChVWCX+uDo+4idJBpGltNfV8st+HwsGw==
+
+monaco-editor-webpack-plugin@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-1.7.0.tgz#920cbeecca25f15d70d568a7e11b0ba4daf1ae83"
+  integrity sha512-oItymcnlL14Sjd7EF7q+CMhucfwR/2BxsqrXIBrWL6LQplFfAfV+grLEQRmVHeGSBZ/Gk9ptzfueXnWcoEcFuA==
+  dependencies:
+    "@types/webpack" "^4.4.19"
+
+monaco-editor@^0.17.0:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.17.1.tgz#8fbe96ca54bfa75262706e044f8f780e904aa45c"
+  integrity sha512-JAc0mtW7NeO+0SwPRcdkfDbWLgkqL9WfP1NbpP9wNASsW6oWqgZqNIWt4teymGjZIXTElx3dnQmUYHmVrJ7HxA==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -7700,6 +7768,15 @@ react-modal@^3.8.1:
     prop-types "^15.5.10"
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
+
+react-monaco-editor@^0.26.2:
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/react-monaco-editor/-/react-monaco-editor-0.26.2.tgz#a12b188529cb9ca4859a9d688ad35701c7d9c933"
+  integrity sha512-a7/w6l8873ankpa5cdAwXSRnwEis8V/2YVeQA0JdTh0edFhQ/2TKlgm8bOFYmGX3taBk+EVp9OMNQvYH1O73iA==
+  dependencies:
+    "@types/react" "*"
+    monaco-editor "^0.17.0"
+    prop-types "^15.7.2"
 
 react-pose@^4.0.8:
   version "4.0.8"

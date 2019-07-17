@@ -20,3 +20,4 @@ slide:
 extends:
   js:
   css: ./style.css
+  webpack: ./webpack.config.js
