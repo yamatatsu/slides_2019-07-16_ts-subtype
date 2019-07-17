@@ -1,7 +1,14 @@
 import React, { useState } from "react";
-import MonacoEditor from "react-monaco-editor";
+
+let MonacoEditor;
 
 export default function Editor() {
+  if (process.env.SSR) return false;
+
+  if (!MonacoEditor) {
+    MonacoEditor = require("react-monaco-editor").default;
+  }
+
   const [code] = useState("// type your code...");
   const options = {
     selectOnLineNumbers: true
