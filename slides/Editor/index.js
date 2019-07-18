@@ -2,6 +2,27 @@ import React, { useState } from "react";
 
 let MonacoEditor;
 
+const initialCode = `\
+// 以下の型を定義します
+type A = { a: number }
+type B = { b: string }
+type AB = A & B
+
+type FnA = (args: A) => void
+type FnAB = (args: AB) => void
+
+const a: A = { a: 1 }
+const ab: AB = { a: 1, b: 'hoge' }
+
+const fnA: FnA = ({ a }) => {}
+const fnAB: FnAB = ({ a, b }) => {}
+
+// このとき、AとAB、どちらがどちらのsubtype？
+
+const check: AB = a
+const checkF: FnA = fnAB
+`;
+
 export default function Editor() {
   if (process.env.SSR) return false;
 
@@ -9,14 +30,20 @@ export default function Editor() {
     MonacoEditor = require("react-monaco-editor").default;
   }
 
-  const [code] = useState("// type your code...");
-  const options = {
-    selectOnLineNumbers: true
-  };
+  const [code] = useState(initialCode);
 
-  const handleDidMount = (editor, monaco) => {
-    console.log("editorDidMount", editor);
-    editor.focus();
+  const handleDidMount = (_editor, _monaco) => {
+    const { typescriptDefaults } = _monaco.languages.typescript;
+    const base = typescriptDefaults._compilerOptions;
+    typescriptDefaults.setCompilerOptions({
+      ...base,
+      strict: true
+    });
+    _editor.getModel().updateOptions({
+      tabSize: 2
+    });
+
+    _editor.focus();
   };
 
   const handleChange = (newValue, e) => {
@@ -30,7 +57,9 @@ export default function Editor() {
       language="typescript"
       theme="vs-dark"
       value={code}
-      options={options}
+      options={{
+        selectOnLineNumbers: true
+      }}
       onChange={handleChange}
       editorDidMount={handleDidMount}
     />
