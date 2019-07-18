@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-let MonacoEditor;
+let MonacoEditor
 
 const initialCode = `\
 // 以下の型を定義します
@@ -21,47 +21,48 @@ const fnAB: FnAB = ({ a, b }) => {}
 
 const check: AB = a
 const checkF: FnA = fnAB
-`;
+`
 
 export default function Editor() {
-  if (process.env.SSR) return false;
+  if (process.env.SSR) return false
 
   if (!MonacoEditor) {
-    MonacoEditor = require("react-monaco-editor").default;
+    MonacoEditor = require('react-monaco-editor').default
   }
 
-  const [code] = useState(initialCode);
+  const [code] = useState(initialCode)
 
   const handleDidMount = (_editor, _monaco) => {
-    const { typescriptDefaults } = _monaco.languages.typescript;
-    const base = typescriptDefaults._compilerOptions;
+    const { typescriptDefaults } = _monaco.languages.typescript
+    const base = typescriptDefaults._compilerOptions
     typescriptDefaults.setCompilerOptions({
       ...base,
-      strict: true
-    });
+      strict: true,
+      esModuleInterop: true,
+    })
     _editor.getModel().updateOptions({
-      tabSize: 2
-    });
+      tabSize: 2,
+    })
 
-    _editor.focus();
-  };
+    _editor.focus()
+  }
 
   const handleChange = (newValue, e) => {
-    console.log("onChange", newValue, e);
-  };
+    console.log('onChange', newValue, e)
+  }
 
   return (
     <MonacoEditor
-      width="800"
-      height="600"
+      width="90vw"
+      height="90vh"
       language="typescript"
       theme="vs-dark"
       value={code}
       options={{
-        selectOnLineNumbers: true
+        selectOnLineNumbers: true,
       }}
       onChange={handleChange}
       editorDidMount={handleDidMount}
     />
-  );
+  )
 }
