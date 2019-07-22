@@ -3,24 +3,26 @@ import React, { useState } from 'react'
 let MonacoEditor
 
 const initialCode = `\
-// 以下の型を定義します
-type A = { a: number }
-type B = { b: string }
-type AB = A & B
+{ // file
+  // 以下の型を定義します
+  type A = { a: number }
+  type B = { b: string }
+  type AB = A & B
 
-type FnA = (args: A) => void
-type FnAB = (args: AB) => void
+  type FnA = (args: A) => void
+  type FnAB = (args: AB) => void
 
-const a: A = { a: 1 }
-const ab: AB = { a: 1, b: 'hoge' }
+  const a: A = { a: 1 }
+  const ab: AB = { a: 1, b: 'hoge' }
 
-const fnA: FnA = ({ a }) => {}
-const fnAB: FnAB = ({ a, b }) => {}
+  const fnA: FnA = ({ a }) => {}
+  const fnAB: FnAB = ({ a, b }) => {}
 
-// このとき、AとAB、どちらがどちらのsubtype？
+  // このとき、AとAB、どちらがどちらのsubtype？
 
-const check: AB = a
-const checkF: FnA = fnAB
+  const check: AB = a
+  const checkF: FnA = fnAB
+}
 `
 
 export default function Editor() {
