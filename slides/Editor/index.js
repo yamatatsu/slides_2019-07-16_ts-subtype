@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 let MonacoEditor
 
-const initialCode = `\
+const INITIAL_CODE = `\
 { // file
   // 以下の型を定義します
   type A = { a: number }
@@ -24,15 +24,14 @@ const initialCode = `\
   const checkF: FnA = fnAB
 }
 `
-
-export default function Editor() {
+export default function Editor({ code }) {
   if (process.env.SSR) return false
 
   if (!MonacoEditor) {
     MonacoEditor = require('react-monaco-editor').default
   }
 
-  const [code] = useState(initialCode)
+  const [_code] = useState(code || INITIAL_CODE)
 
   const handleDidMount = (_editor, _monaco) => {
     const { typescriptDefaults } = _monaco.languages.typescript
@@ -59,7 +58,7 @@ export default function Editor() {
       height="90vh"
       language="typescript"
       theme="vs-dark"
-      value={code}
+      value={_code}
       options={{
         selectOnLineNumbers: true,
       }}

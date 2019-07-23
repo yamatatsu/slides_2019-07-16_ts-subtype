@@ -1,9 +1,63 @@
 <!-- sectionTitle: subtypeとは？ -->
 
+import { Card } from "@fusuma/client"
 import Editor from "./Editor";
+
+import benAnimal from './images/00-ben-animal.jpg'
+import benTsObject from './images/10-ben-ts-object.jpg'
 
 ## subtypeとは？
 
 ---
 
-<Editor />
+<h3>superType: animals</h3>
+<h3>subType: ???</h3>
+
+---
+
+<h3 class='no-animation'>superType: animals</h3>
+<h3>subType: cat 🐈</h3>
+
+---
+
+<h3>superType: fruits</h3>
+<h3>subType: ???</h3>
+
+---
+
+<h3 class='no-animation'>superType: fruits</h3>
+<h3>subType: banana 🍌</h3>
+
+---
+
+##### 図で書くとこう
+
+<img src={benAnimal} style={{ height: '50vh' }} />
+
+---
+
+## TSのsubtypeとは？
+
+---
+
+##### 図で書くとこう
+
+<img src={benTsObject} style={{ height: '50vh' }} />
+
+---
+
+<Editor code={`\
+{ // file
+  type A = { a: number }
+  type B = { b: string }
+  type AB = A & B
+\n\
+  const a: A = { a: 1 }
+  const ab: AB = { a: 1, b: 'hoge' }
+\n\
+  // このとき、AとAB、どちらがどちらのsubtype？
+\n\
+  const checkA: A = ab
+  const checkAB: AB = a
+}
+`} />

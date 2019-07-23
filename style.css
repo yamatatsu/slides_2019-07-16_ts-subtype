@@ -18,8 +18,8 @@ body {
 }
 
 /* code blocks */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   font-size: 2rem;
 }
 
@@ -37,5 +37,9 @@ a {
 
 .react-monaco-editor-container * {
   text-align: left;
+  animation: none;
+}
+
+.no-animation {
   animation: none;
 }
