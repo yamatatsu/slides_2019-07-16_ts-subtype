@@ -1,0 +1,60 @@
+<!-- sectionTitle: 俺たちは本能で反変を理解している -->
+
+import Editor from "./Editor";
+
+#### 反変を理解したい！
+
+---
+
+でも大丈夫
+
+---
+
+## 俺たちは本能で反変を理解している！
+
+---
+
+<Editor language='javascript' code={`\
+{ // これは javascript です
+  const email = document.getElementById('email-input')
+\n\
+  // 次のうち確実にエラーになるのはどれでしょう？
+\n\
+  // A. 普通にログ
+  email.onchange = () => {
+    console.log('hoge')
+  }
+\n\
+  // B. target.value をログ
+  email.onchange = (e) => {
+    console.log(e.target.value)
+  }
+\n\
+  // C. eventには存在しないプロパティにアクセス
+  email.onchange = (e) => {
+    console.log(e.event_niwa_sonzai_shinai_property.toString())
+  }
+}
+`} />
+
+---
+
+<Editor code={`\
+{ // file
+  type Fn<Arg> = (arg: Arg) => void
+\n\
+  type Event = { target: { value: string } }
+  type SubEvent = Event & { event_niwa_sonzai_shinai_property: string }
+  type EventFn = Fn<Event>
+  type SubEventFn = Fn<SubEvent>
+\n\
+  const eventFn: EventFn = (e: Event) => {
+    console.log(e.target.value)
+  }
+  const subEventFn: SubEventFn = (e: SubEvent) => {
+    console.log(e.event_niwa_sonzai_shinai_property.toString())
+  }
+\n\
+  const onchange: EventFn = subEventFn
+}
+`} />

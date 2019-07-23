@@ -40,9 +40,7 @@ import benTsObject from './images/10-ben-ts-object.jpg'
 
 ---
 
-##### 図で書くとこう
-
-<img src={benTsObject} style={{ height: '50vh' }} />
+## objectのsubtype
 
 ---
 
@@ -57,7 +55,59 @@ import benTsObject from './images/10-ben-ts-object.jpg'
 \n\
   // このとき、AとAB、どちらがどちらのsubtype？
 \n\
-  const checkA: A = ab
-  const checkAB: AB = a
+  // const checkA: A = ab
+  // const checkAB: AB = a
+}
+`} />
+
+---
+
+## numberのsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type SuperNumber = number
+  type SubNumber = 1 | 2 | 3
+\n\
+  const superNumber: SuperNumber = 1 as SubNumber
+  const subNumber: SubNumber = Date.now()
+}
+`} />
+
+---
+
+## stringのsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type Animal = 'dog' | 'pig' | 'cat'
+  type Cat = 'cat'
+\n\
+  const animal: Animal = 'cat'
+  const cat: Cat = 'dog' as Animal
+}
+`} />
+
+---
+
+## Promiseのsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type Animal = 'dog' | 'pig' | 'cat'
+  type Cat = 'cat'
+  type AnimalPromise = Promise<Animal>
+  type CatPromise = Promise<Cat>
+\n\
+  const animalPromise: AnimalPromise = Promise.resolve('cat')
+  const catPromise: CatPromise = Promise.resolve('dog') as AnimalPromise
+\n\
+  /* これが共変(covariance) */
 }
 `} />

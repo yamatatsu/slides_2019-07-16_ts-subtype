@@ -24,7 +24,7 @@ const INITIAL_CODE = `\
   const checkF: FnA = fnAB
 }
 `
-export default function Editor({ code }) {
+export default function Editor({ code, language = 'typescript' }) {
   if (process.env.SSR) return false
 
   if (!MonacoEditor) {
@@ -56,7 +56,7 @@ export default function Editor({ code }) {
     <MonacoEditor
       width="90vw"
       height="90vh"
-      language="typescript"
+      language={language}
       theme="vs-dark"
       value={_code}
       options={{

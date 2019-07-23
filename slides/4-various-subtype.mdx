@@ -1,0 +1,49 @@
+<!-- sectionTitle: さまざまなsubtype -->
+
+import Editor from "./Editor";
+
+## さまざまなsubtype
+
+---
+
+## Partialのsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type A = { a: number }
+  type AB = A & { b: string }
+  type APartial = Partial<A>
+  type ABPartial = Partial<AB>
+\n\
+  const a: A = { a: 1 }
+  const ab: AB = { a: 1, b: 'hoge' }
+  const aPartial: APartial = {}
+  const abPartial: ABPartial = { b: 'hoge' }
+\n\
+  const checkA: A = a
+  const checkAB: AB = a
+  const checkAPartial: APartial = a
+  const checkABPartial: ABPartial = a
+}
+`} />
+
+---
+
+## Readonlyのsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type A = { a: number }
+  type AReadonly = Readonly<A>
+\n\
+  const a: A = { a: 1 }
+  const aReadonly: AReadonly = { a: 1 }
+\n\
+  const checkA: A = aReadonly
+  const checkAReadonly: AReadonly = a
+}
+`} />

@@ -1,0 +1,57 @@
+<!-- sectionTitle: 関数のsubtype -->
+
+import Editor from "./Editor";
+
+## 関数のsubtype
+
+---
+
+<Editor code={`\
+{ // file
+  type Fn<Arg> = (arg: Arg) => void
+\n\
+  type Animal = 'dog' | 'pig' | 'cat'
+  type Cat = 'cat'
+  type AnimalFn = Fn<Animal>
+  type CatFn = Fn<Cat>
+\n\
+  const animalFn: AnimalFn = (arg: Animal) => {}
+  const catFn: CatFn = (arg: Cat) => {}
+\n\
+  // const check1: AnimalFn = catFn
+  // const check2: CatFn = animalFn
+\n\
+  /* これが反変(contravariance) */
+}
+`} />
+
+---
+
+#### なんなの？バグなの？
+
+---
+
+<Editor code={`\
+{ // file
+  type Fn<Arg> = (arg: Arg) => void
+\n\
+  type A = { a: number } // super
+  type AB = A & { b: string } // sub
+  type AFn = Fn<A>
+  type ABFn = Fn<AB>
+\n\
+  const aFn: AFn = (arg: A) => {
+    alert(arg.a.toString())
+  }
+  const abFn: ABFn = (arg: AB) => {
+    alert(arg.b.toString())
+  }
+\n\
+  const check1: AFn = abFn
+  const check2: ABFn = aFn
+}
+`} />
+
+---
+
+#### 人間の脳より反変の方が正しい！
