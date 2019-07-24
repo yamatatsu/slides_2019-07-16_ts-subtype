@@ -1,29 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 let MonacoEditor
 
-const INITIAL_CODE = `\
-{ // file
-  // 以下の型を定義します
-  type A = { a: number }
-  type B = { b: string }
-  type AB = A & B
-
-  type FnA = (args: A) => void
-  type FnAB = (args: AB) => void
-
-  const a: A = { a: 1 }
-  const ab: AB = { a: 1, b: 'hoge' }
-
-  const fnA: FnA = ({ a }) => {}
-  const fnAB: FnAB = ({ a, b }) => {}
-
-  // このとき、AとAB、どちらがどちらのsubtype？
-
-  const check: AB = a
-  const checkF: FnA = fnAB
-}
-`
 export default function Editor({ code, language = 'typescript' }) {
   if (process.env.SSR) return false
 
@@ -31,39 +9,58 @@ export default function Editor({ code, language = 'typescript' }) {
     MonacoEditor = require('react-monaco-editor').default
   }
 
-  const [_code] = useState(code || INITIAL_CODE)
-
-  const handleDidMount = (_editor, _monaco) => {
-    const { typescriptDefaults } = _monaco.languages.typescript
-    const base = typescriptDefaults._compilerOptions
-    typescriptDefaults.setCompilerOptions({
-      ...base,
-      strict: true,
-      esModuleInterop: true,
-    })
-    _editor.getModel().updateOptions({
-      tabSize: 2,
-    })
-
-    _editor.focus()
-  }
-
-  const handleChange = (newValue, e) => {
-    console.log('onChange', newValue, e)
-  }
+  const [ref, rerenderKey] = useRenderKey()
 
   return (
     <MonacoEditor
+      ref={ref}
+      key={rerenderKey}
       width="90vw"
       height="90vh"
       language={language}
       theme="vs-dark"
-      value={_code}
+      value={code}
       options={{
         selectOnLineNumbers: true,
       }}
-      onChange={handleChange}
       editorDidMount={handleDidMount}
     />
   )
+}
+
+// monacoが謎の点で表示されてしまう時がある(初期表示など)ので、そうなったらrenderKeyを更新する
+function useRenderKey() {
+  const ref = useRef(null)
+  const [rerenderKey, rerender] = useState(0)
+
+  useEffect(() => {
+    const handler = event => {
+      if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return
+      const offsetHeight =
+        ref.current.containerElement.childNodes[0].offsetHeight
+      // monacoが謎の点で表示されてしまうとき
+      if (0 < offsetHeight && offsetHeight <= 10) {
+        rerender(Date.now())
+      }
+    }
+    document.addEventListener('keydown', handler, false)
+    return () => {
+      document.removeEventListener('keydown', handler, false)
+    }
+  }, [rerenderKey])
+
+  return [ref, rerenderKey]
+}
+
+function handleDidMount(_editor, _monaco) {
+  const { typescriptDefaults } = _monaco.languages.typescript
+  const base = typescriptDefaults._compilerOptions
+  typescriptDefaults.setCompilerOptions({
+    ...base,
+    strict: true,
+    esModuleInterop: true,
+  })
+  _editor.getModel().updateOptions({
+    tabSize: 2,
+  })
 }
