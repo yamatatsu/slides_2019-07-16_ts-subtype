@@ -40,10 +40,17 @@ import Editor from "./Editor";
   type A = { a: number }
   type AReadonly = Readonly<A>
 \n\
-  const a: A = { a: 1 }
   const aReadonly: AReadonly = { a: 1 }
+  // aReadonly.a = 10 // error!
 \n\
-  const checkA: A = aReadonly
-  const checkAReadonly: AReadonly = a
+  mutate(aReadonly)
+\n\
+  console.log(aReadonly) // => { a: 100 }
+\n\
+  // 破壊
+  function mutate(arg: A) {
+    arg.a = 100
+  }
 }
+// https://github.com/microsoft/TypeScript/issues/13347
 `} />
