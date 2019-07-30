@@ -1,7 +1,7 @@
 meta:
-  title:
-  thumbnail:
-  description:
+  title: TSのsubtypeとcontravariance
+  thumbnail: ./thumbnail.png
+  description: TSのsubtypeとcontravariance
   sns:
     - twitter
 slide:
